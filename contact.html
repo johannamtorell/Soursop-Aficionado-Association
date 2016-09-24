@@ -2,24 +2,120 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Association of Soursop Aficionados</title>
+<title>Join our Fan Club!</title>
+<meta name="description" content="Join the official Association of Soursop Aficionados Fan Club today!">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="contact.css">
+<script>
+$(document).ready(function(){
+    $("selector").hide();
+});
+</script>
 </head>
 <body>
-<header><h1>Contact Us</h1>
+<header itemscope itemtype="http://schema.org/LocalBusiness" id="main-header"> 
+<h1>Join our Fan Club!</h1>
 </header>
-<nav><ul><li><a href="index.html">Home</a></li>
-         <li><a href="recipes.html">Recipes</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="contact.html">Contact</a></li>
+<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
+	 <ul><li itemprop="name"><a itemprop="url" href="index.html"><span>Home</span></a></li>
+         <li itemprop="name"><a itemprop="url" href="recipes.html"><span>Recipes</span></a></li>
+         <li itemprop="name"><a itemprop="url" href="about.html"><span>About</span></a></li>
+         <li itemprop="name" id="active"><a itemprop="url" href="contact.html"><span>Contact</span></a></li>
      </ul>
+<label for="search">Search this site: </label> 
+						<input list="mysearch" id="search" type="search" placeholder="search">
+                        <datalist id="mysearch">
+                        <option value="Soursop"></option>
+                        <option value="Punch"></option>
+                        <option value="Association of Soursop Aficionados"></option>
+                        <option value="health benefits"></option>
+                        </datalist>
 </nav>
 <main>
-<p>Write to us, we would love to hear from you!</p>
-<p>Shoot us an <a href="mailto:soursoplover@soursop.com">email</a>.</p>
-<p>Or write us the old fashioned way at:<br>
-Association of Soursop Aficionados<br>1111 Soursop Way<br>Suite 999<br>Soursopia, Sopland, 98765 <br></p>
+<article>
+<h2>Official Association of Soursop Aficionados Fan Club</h2>
+
+	<p>Join our fan club to receive monthly emails with new recipes and up to date information on the health benefits of Soursop, the most amazing fruit 	       in the world!</p>
+
+ <section>
+     <h3>Sign up here:</h3>
+           <form method="post" action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi">
+    			  <fieldset>
+                  		<br>
+                        First name: 
+                        <input type="text" name="firstname" placeholder="First name" required autofocus>
+                        <br><br>
+                        Last name: 
+                        <input type="text" name="lastname"  placeholder="Last name" required>
+                        <br><br>
+                        E-mail:
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="soursop@soursop.com" required>
+                        <br><br>
+                        Telephone:
+  						<input type="tel" name="usrtel" placeholder="(123)456-7890">
+  						<br><br>
+                        Date:
+                        <input type="date" value="2016-09-23" data-polyfill="2016-09-23">
+                        <br><br><br>
+                        Would you like to be contacted by more fruit-loving fan clubs?
+                        <br>
+                        <input type="radio" id="yes" name="contact" value="yes" checked>
+                        <label for="yes">Yes please!</label>
+                        <br>
+                        <input type="radio" id="no" name="contact" value="no">
+                        <label for="no">No Way.</label>
+                        
+                        <br>
+                        <br>
+                    </fieldset>
+                    <br>
+    <h3>Please answer a few questions about this wonderful fruit:</h3>
+                    <fieldset>
+                    	<span><label for="feel">How do you feel about Soursop?</label></span>
+                        <br> 
+                        <span>
+                        <select name="feel" id="feel">
+                        <option value="love" selected>It's is the best fruit I've ever tasted in my whole life!</option>
+                        <option value="like"> It's not my favorite fruit, but pretty darn good.</option>
+                        <option value="eh">I could take it or leave it, honestly.</option>
+                        </select>
+                        </span>
+                        <br><br>
+                    	
+						Have you experienced any of these health benefits from the Soursop plant?<br>
+                        <input type="checkbox" name="benefits" value="inflamation relief">inflamation relief<br>
+                        <input type="checkbox" name="benefits" value="diabetic symptom relief">diabetic symptom relief<br>
+                        <input type="checkbox" name="benefits" value="eczema relief">eczema relief<br>
+                        <input type="checkbox" name="benefits" value="muscle spasm reduction">muscle spasm reduction<br>
+                        <br>
+                        
+        				Tell us how you discovered Soursop!<br>
+                        <textarea name="message">
+                        </textarea>
+                    </fieldset>
+                    <br><br>                           
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </form> 
+            
+            </section>
+            <br>
+
+				<p>Feel free to drop us a line anytime!</p>
+                <a href="mailto:soursoplover@soursop.com"><input type="image" src="images/email.png" alt="Email Us!" title="Email Us!"></a>
+                <br>
+                <br>
+                <address itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="name">Association of Soursop Aficionados</span><br>
+                <span itemprop="postOfficeBoxNumber">PO Box 1111</span><br>
+                <span itemprop="addressLocality">Soursopia</span>, 
+                <span itemprop="addressRegion">Sopland</span> 
+                <span itemprop="postalCode">98765</span><br>
+                <span itemprop="addressCountry">United States</span>
+                </address> 
 
 <hr>
+</article>
 </main>
 <footer>
 <p><small>&copy; JMT Studios 2016</small></p>
