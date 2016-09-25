@@ -52,7 +52,7 @@ $(document).ready(function(){
                         <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="soursop@soursop.com" required>
                         <br><br>
                         Telephone:
-  						<input type="tel" name="usrtel" placeholder="(123)456-7890">
+  						<input type="tel" name="usrtel" maxlength="13" pattern="\d{3}[-)]\d{3}[\-]\d{4}" placeholder="123-456-7890">
   						<br><br>
                         Date:
                         <input type="date" value="2016-09-23" data-polyfill="2016-09-23">
@@ -93,12 +93,15 @@ $(document).ready(function(){
                         <textarea name="message">
                         </textarea>
                     </fieldset>
-                    <br><br> 
-                    <input type="image" src="images/submit.png" alt="Submit" title="Submit"> 
-                    <br><br>                      
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
                     <br><br>
+                    
+                    <button type="submit" value="Submit Form">
+					<img src="images/submit.png" alt="Sign Up!" /><br />
+					</button>
+					<button type="reset" value="Clear Form">
+     				<img src="images/reset.png" alt="Reset" /><br />
+					</button><br><br>
+                    
                     
                 </form> 
             
