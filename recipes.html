@@ -3,52 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <title>Soursop Aficionado Association</title>
+
+<link href="soursop.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="icon" href="images/favicon.png">
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+
 </head>
 <body>
+
+<nav>
+<img src="images/6.png" alt="Association of Soursop Aficionados">
+ <div class="dropdown" style="float:right;">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  </div>
+</nav>
 <header><h1>Soursop Recipes</h1>
 </header>
-<nav><ul><li><a href="index.html">Home</a></li>
-         <li><a href="recipes.html">Recipes</a></li>
-         <li><a href="about.html">About</a></li>
-         <li><a href="contact.html">Contact</a></li>
-     </ul>
-</nav>
 <main>
+<div id="cf">
+        <figure>
+    <img class="bottom" itemprop="image" src="images/5.png" alt="The delicious Soursop" title="The delicious Soursop" width="300" height="300">
+    <img class="top" itemprop="image" src="images/4.png" alt="The delicious Soursop" title="The delicious Soursop" width="300" height="300"/>
+		</figure>
+        </div>
 		<section>
+       
         <h2>A fruit with GREAT health benefits!</h2>
 			<article>
-            <div itemscope itemtype="http://schema.org/Recipe">
+            <div itemscope itemtype="http://schema.org/Recipe" class="recipe">
             
-            <article class="article-section">
-			<h3>Soursop on the Radio</h3>
-			<p>Listen to some of the benefits of this amazing fruit on Michele's Friday podcast of The Psychic Viewpoint while you fix some delicious recipes! Herbmama will talk about soursop or graviola...a proven cancer fighting food.</p>
-
-			<aside>
-                <div class="audio">
-                    <audio controls>
-                      <source src="audio/soursopradio.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                    </audio>
-                </div>
-            </aside>
-		</article>
-
-    <h2 itemprop="name">Soursop Punch</h2><br>
-    
-
-		<figure>
-    <img itemprop="image" src="images/soursop.jpg" alt="The delicious Soursop" title="The delicious Soursop" width="300" height="300">
-			<figcaption>The delicious Soursop</figcaption>
-		</figure> 
-        
-    Posted by<span itemprop="author"> Jaci on allrecipes.com</span><br>
-    <span itemprop="description">"One of my favorite beverages when I was a little girl was made with the soursop fruit. You can use either white or brown sugar for this punch." </span><br>
+         <h3 itemprop="name">Soursop Punch</h3>
+    <p>Posted by<span itemprop="author"> Jaci on allrecipes.com</span><br>
+    <span itemprop="description">"One of my favorite beverages when I was a little girl was made with the soursop fruit. You can use either white or brown sugar for this punch." </span></p>
     
     <section>
-    <h4>Prep time: <time datetime="PT0H15M" itemprop="prepTime">15 minutes</time></h4>
-    <h4>Chill time: <time datetime="PT0H30M" itemprop="cookTime">30 minutes</time></h4>
-    <h4>Total time: <time datetime="PT0H45M" itemprop="totalTime">45 minutes</time></h4>
-    <h4>Yield: <span itemprop="recipeYield">2 servings</span></h4>
+    <h3>Prep time: <time datetime="PT0H15M" itemprop="prepTime">15 minutes</time></h3>
+    <h3>Chill time: <time datetime="PT0H30M" itemprop="cookTime">30 minutes</time></h3>
+    <h3>Total time: <time datetime="PT0H45M" itemprop="totalTime">45 minutes</time></h3>
+    <h3>Yield: <span itemprop="recipeYield">2 servings</span></h3>
     </section>
     
     <section>
@@ -76,11 +75,22 @@
     </div>
 			</article>
 </section> 
-   <hr>    
+      <article class="article-section">
+			<h4>Soursop on the Radio</h4>
+			<p>Listen to some of the benefits of this amazing fruit on Michele's Friday podcast of The Psychic Viewpoint while you fix some delicious recipes! Herbmama will talk about soursop or graviola...a proven cancer fighting food.</p>
+
+			<aside>
+                <div class="audio">
+                    <audio controls>
+                      <source src="audio/soursopradio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </aside>
+		</article>
 </main>
 
 <footer>
-<address>Association of Soursop Aficionados<br>1111 Soursop Way<br>Suite 999<br>Soursopia, Sopland, 98765 <br></address>
 <p><small>&copy; JMT Studios 2016</small></p>
 </footer>
 </body>

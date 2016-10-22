@@ -5,32 +5,35 @@
 <title>Join our Fan Club!</title>
 <meta name="description" content="Join the official Association of Soursop Aficionados Fan Club today!">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="contact.css">
-<script>
+<link href="soursop.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="icon" href="images/favicon.png">
+
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> <script>
 $(document).ready(function(){
     $("selector").hide();
 });
 </script>
 </head>
 <body>
+
+<nav>
+<img src="images/6.png" alt="Association of Soursop Aficionados">
+ <div class="dropdown" style="float:right;">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  </div>
+</nav>
+
 <header itemscope itemtype="http://schema.org/LocalBusiness" id="main-header"> 
 <h1>Join our Fan Club!</h1>
 </header>
-<nav itemscope itemtype="http://schema.org/SiteNavigationElement">
-	 <ul><li itemprop="name"><a itemprop="url" href="index.html"><span>Home</span></a></li>
-         <li itemprop="name"><a itemprop="url" href="recipes.html"><span>Recipes</span></a></li>
-         <li itemprop="name"><a itemprop="url" href="about.html"><span>About</span></a></li>
-         <li itemprop="name" id="active"><a itemprop="url" href="contact.html"><span>Contact</span></a></li>
-     </ul>
-<label for="search">Search this site: </label> 
-						<input list="mysearch" id="search" type="search" placeholder="search">
-                        <datalist id="mysearch">
-                        <option value="Soursop"></option>
-                        <option value="Punch"></option>
-                        <option value="Association of Soursop Aficionados"></option>
-                        <option value="health benefits"></option>
-                        </datalist>
-</nav>
+
+
 <main>
 <article>
 <h2>Official Association of Soursop Aficionados Fan Club</h2>
@@ -93,26 +96,28 @@ $(document).ready(function(){
                         <textarea name="message">
                         </textarea>
                     </fieldset>
-                    <br><br>
+                    
                     
                     <button type="submit" value="Submit">
 					<img src="images/submit.png" alt="Sign Up!" /><br />
 					</button>
 					<button type="reset" value="Reset">
      				<img src="images/reset.png" alt="Reset" /><br />
-					</button><br><br>
+					</button>
                     
                     
                 </form> 
             
             </section>
-            <br>
+            
 
-				<p>Feel free to drop us a line anytime!</p>
-                <a href="mailto:soursoplover@soursop.com">soursoplover@soursop.com</a>
-                <br>
-                <br>
-                <address itemscope itemtype="http://schema.org/PostalAddress">
+				
+                
+
+</article>
+</main>
+<footer>
+<address itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="name">Association of Soursop Aficionados</span><br>
                 <span itemprop="postOfficeBoxNumber">PO Box 1111</span><br>
                 <span itemprop="addressLocality">Soursopia</span>, 
@@ -121,10 +126,8 @@ $(document).ready(function(){
                 <span itemprop="addressCountry">United States</span>
                 </address> 
 
-<hr>
-</article>
-</main>
-<footer>
+<p><a href="mailto:soursoplover@soursop.com">soursoplover@soursop.com</a></p>
+
 <p><small>&copy; JMT Studios 2016</small></p>
 </footer>
 </body>
